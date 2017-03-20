@@ -6,7 +6,7 @@ class Mediaelement_Kwc_VideoPlayer_Component extends Kwc_Abstract_Composite_Comp
     {
         $ret = parent::getSettings($param);
         $ret = array_merge($ret, array(
-            'ownModel'     => 'Mediaelement_VideoPlayer_Model',
+            'ownModel'     => 'Mediaelement_Kwc_VideoPlayer_Model',
             'componentName' => trlKwfStatic('Video'),
             'componentCategory' => 'media',
             'componentIcon' => 'film',

@@ -1,5 +1,5 @@
 <?php
-class Kwc_Advanced_VideoPlayer_Admin extends Kwc_Abstract_Composite_Admin
+class Mediaelement_Kwc_VideoPlayer_Admin extends Kwc_Abstract_Composite_Admin
 {
     public function componentToString(Kwf_Component_Data $data)
     {
