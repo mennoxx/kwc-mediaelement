@@ -1,12 +1,12 @@
 <?php
-class Kwc_Advanced_AudioPlayer_Component extends Kwc_Abstract_Composite_Component
+class Mediaelement_Kwc_AudioPlayer_Component extends Kwc_Abstract_Composite_Component
     implements Kwf_Media_Output_IsValidInterface
 {
     public static function getSettings($param = null)
     {
         $ret = parent::getSettings($param);
         $ret = array_merge($ret, array(
-            'ownModel'     => 'Kwc_Advanced_AudioPlayer_Model',
+            'ownModel'     => 'Mediaelement_Kwc_Advanced_AudioPlayer_Model',
             'componentName' => trlKwfStatic('Audio'),
             'componentIcon' => 'sound',
             'extConfig' => 'Kwf_Component_Abstract_ExtConfig_Form'
