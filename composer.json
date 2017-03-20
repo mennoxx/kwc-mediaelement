@@ -9,6 +9,7 @@
     },
     "extra": {
         "require-bower": {
+            "mediaelement": "^3.2.4"
         }
     },
     "minimum-stability": "dev",
