@@ -79,7 +79,6 @@ class Mediaelement_Kwc_VideoPlayer_Component extends Kwc_Abstract_Composite_Comp
                 'title' => 'ogg',
             );
         }
-//        d($url);
         $ret['config'] = $this->_getSetting('video');
         $dimensions = $this->getVideoDimensions();
         $ret['config']['videoWidth'] = $dimensions['width'];

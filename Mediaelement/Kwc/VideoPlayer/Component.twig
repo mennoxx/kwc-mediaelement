@@ -10,7 +10,7 @@
         {% if not config.startVolume %}muted="muted"{% endif %}
 >
     {% for source in sources %}
-        <source src="{{ sources.src }}" type="{{ sources.type }}" title="{{ sources.title }}" />
+        <source src="{{ source.src }}" type="{{ source.type }}" title="{{ source.title }}" />
     {% endfor %}
 </video>
 </div>
