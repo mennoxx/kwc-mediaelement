@@ -6,8 +6,9 @@ class Mediaelement_Kwc_AudioPlayer_Component extends Kwc_Abstract_Composite_Comp
     {
         $ret = parent::getSettings($param);
         $ret = array_merge($ret, array(
-            'ownModel'     => 'Mediaelement_Kwc_Advanced_AudioPlayer_Model',
+            'ownModel'     => 'Mediaelement_Kwc_AudioPlayer_Model',
             'componentName' => trlKwfStatic('Audio'),
+            'componentCategory' => 'media',
             'componentIcon' => 'sound',
             'extConfig' => 'Kwf_Component_Abstract_ExtConfig_Form'
         ));
