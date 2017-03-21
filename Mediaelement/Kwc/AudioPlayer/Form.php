@@ -1,5 +1,5 @@
 <?php
-class Kwc_Advanced_AudioPlayer_Form extends Kwc_Abstract_Composite_Form
+class Mediaelement_Kwc_AudioPlayer_Form extends Kwc_Abstract_Composite_Form
 {
     protected $_model = 'Kwc_Advanced_AudioPlayer_Model';
 
