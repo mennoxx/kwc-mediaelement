@@ -5,12 +5,13 @@
     "license": "BSD-2-Clause",
     "type": "library",
     "require": {
-        "koala-framework/koala-framework": "~4.2 || ~5.0"
+        "koala-framework/koala-framework": "~5.0"
     },
     "extra": {
-        "require-bower": {
-            "mediaelement": "^3.2.4"
-        }
+        "require-npm": {
+            "mediaelement": "^4.2.9"
+        },
+        "expose-npm-packages": true
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
