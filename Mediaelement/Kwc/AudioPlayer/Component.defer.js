@@ -1,10 +1,10 @@
-var onReady = require('kwf/on-ready');
-require('kwf-jquery-plugin/mediaelement');
+"use strict";
+var onReady = require('kwf/commonjs/on-ready');
+require('mediaelement');
+require('mediaelement/build/mediaelementplayer.css');
 
 onReady.onRender('.kwcClass', function(el, config) {
-    el.children('audio').mediaelementplayer({
-        //custom path to flash
-        flashName: '/assets/mediaelement/build/flashmediaelement.swf',
+    new MediaElementPlayer(el.children('audio')[0], {
         // if the <audio width> is not specified, this is the default
         defaultAudioWidth: config.defaultAudioWidth,
         // if the <audio height> is not specified, this is the default

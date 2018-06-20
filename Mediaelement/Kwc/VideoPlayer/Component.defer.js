@@ -1,16 +1,14 @@
-var $ = require('jQuery');
-var onReady = require('kwf/on-ready');
-require('kwf-jquery-plugin/mediaelement/build/mediaelement-and-player');
-// @require mediaelement/build/mediaelementplayer.css
+"use strict";
+var onReady = require('kwf/commonjs/on-ready');
+require('mediaelement');
+require('mediaelement/build/mediaelementplayer.css');
 
 onReady.onHide('.KwcClass', function(el) {
     if (el.get(0).mediaElement) el.get(0).mediaElement.stop();
 }, {defer: true});
 
 onReady.onRender('.kwcClass', function(el, config) {
-    el.find('video').mediaelementplayer({
-        //custom path to flash
-        flashName: '/assets/mediaelement/build/flashmediaelement.swf',
+    new MediaElementPlayer(el.find('video')[0], {
         // if the <video width> is not specified, this is the default
         defaultVideoWidth: config.defaultVideoWidth,
         // if the <video height> is not specified, this is the default

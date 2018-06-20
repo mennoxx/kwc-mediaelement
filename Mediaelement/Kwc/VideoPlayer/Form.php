@@ -3,9 +3,9 @@ class Mediaelement_Kwc_VideoPlayer_Form extends Kwc_Abstract_Composite_Form
 {
     protected $_model = 'Mediaelement_Kwc_VideoPlayer_Model';
 
-    public function __construct($name, $class, $id = null)
+    public function __construct($name, $class)
     {
-        parent::__construct($name, $class, $id);
+        parent::__construct($name, $class);
         $cards = $this->fields->add(new Kwf_Form_Container_Cards('source_type', trlKwf('Video Source Type')));
         $cards->getCombobox()->setAllowBlank(false);
         $card = $cards->add();
