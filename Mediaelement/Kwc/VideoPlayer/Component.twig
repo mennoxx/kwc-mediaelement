@@ -1,16 +1,14 @@
 <div class="{{ rootElementClass }}">
-<input type="hidden" class="config" value="{{ config|json_encode }}">
-<video
-        id="player2"
-        controls="controls"
-        width="{{ config.videoWidth }}"
-        height="{{ config.videoHeight }}"
-        {% if config.autoPlay %}preload="none"{% endif %}
-        {% if imageUrl %}poster="{{ imageUrl }}"{% endif %}
-        {% if not config.startVolume %}muted="muted"{% endif %}
->
-    {% for source in sources %}
-        <source src="{{ source.src }}" type="{{ source.type }}" title="{{ source.title }}" />
-    {% endfor %}
-</video>
+    <input type="hidden" class="config" value="{{ config|json_encode }}">
+    <video controls="controls"
+           width="{{ config.videoWidth }}"
+           height="{{ config.videoHeight }}"
+           {% if config.autoPlay %}preload="none"{% endif %}
+           {% if imageUrl %}poster="{{ imageUrl }}"{% endif %}
+           {% if not config.startVolume %}muted="muted"{% endif %}
+    >
+        {% for source in sources %}
+            <source src="{{ source.src }}" type="{{ source.type }}" title="{{ source.title }}" />
+        {% endfor %}
+    </video>
 </div>
