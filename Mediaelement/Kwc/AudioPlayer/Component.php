@@ -15,14 +15,14 @@ class Mediaelement_Kwc_AudioPlayer_Component extends Kwc_Abstract_Composite_Comp
         $ret['assetsAdmin']['dep'][] = 'KwfFormFile';
 
         $ret['audio'] = array(
-            'audioWidth' => 400,
-            'audioHeight' => 30,
+            'audioWidth' => '100%',
+            'audioHeight' => 40,
             'startVolume' => 0.8,
             'loop' => false,
             'enableAutosize' => true,
             'features' => array(
                 'playpause','progress','current','duration','tracks','volume','fullscreen'
-                ),
+            ),
             'alwaysShowControls' => false,
             'iPadUseNativeControls' => false,
             'iPhoneUseNativeControls' => false,
